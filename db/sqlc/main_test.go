@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	dbSource = "postgresql://postgres:postgres@localhost:5432/grpc_bank?sslmode=disable"
+	dbSource = "postgresql://postgres:password@localhost:5432/grpc_bank?sslmode=disable"
 )
 
 var testStore Store
