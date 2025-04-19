@@ -16,7 +16,7 @@ migrateup:
 migratedown:
 	migrate -path db/migration -database 'postgresql://postgres:password@localhost:5432/grpc_bank?sslmode=disable' -verbose down
 
-.PHONY: postgres createdb dropdb migrateup migratedown
+sqlc:
+	sqlc generate
 
-# migrateup:
-# 	sqlx migrate run
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc
